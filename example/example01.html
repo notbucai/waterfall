@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Columns</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-color: #f9f9f9f9;
+		}
+		#app{
+			width: 840px;
+			position: relative;
+			margin: 20px auto;
+		}
+		.item{
+			position: absolute;
+			width: 200px;
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 0 8px #ddd;
+      overflow: hidden;
+		}
+		.item img{
+			width: 100%;
+      float: left;
+		}
+		.item p{
+			color: #333;
+			font-size: 14px;
+			line-height: 30px;
+			text-align: center;
+		}
+	</style>
+
+
+</head>
+<body>
+
+<!-- 
+main#app>div.item*20>img[src=../img/$.png alt="$"]+p{条目$加载成功}
+ -->
+
+<main id="app">
+	<div class="item">
+		<img src="../img/1.gif" alt="1">
+		<p>条目1加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/2.gif" alt="2">
+		<p>条目2加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/3.gif" alt="3">
+		<p>条目3加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/4.gif" alt="4">
+		<p>条目4加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/5.gif" alt="5">
+		<p>条目5加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/6.gif" alt="6">
+		<p>条目6加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/7.gif" alt="7">
+		<p>条目7加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/8.gif" alt="8">
+		<p>条目8加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/9.gif" alt="9">
+		<p>条目9加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/10.gif" alt="10">
+		<p>条目10加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/11.gif" alt="11">
+		<p>条目11加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/12.gif" alt="12">
+		<p>条目12加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/13.gif" alt="13">
+		<p>条目13加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/14.gif" alt="14">
+		<p>条目14加载成功</p>
+	</div>
+	<div class="item">
+		<img src="../img/15.gif" alt="15">
+		<p>条目15加载成功</p>
+	</div>
+</main>
+
+<script src="../js/waterfall.js"></script>
+<script>
+	
+
+	new WaterFallList({
+		el:"#app",
+		count: 4,
+	}).render();
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
